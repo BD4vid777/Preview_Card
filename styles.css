@@ -1,0 +1,138 @@
+:root {
+    --ff-lexend-deca: 'Lexend Deca', sans-serif;
+    --ff-big-shoulders: 'Big Shoulders Display', cursive;
+
+    --fw400: 400;
+    --fw700: 700;
+
+    --clr-primary-orange: hsl(31, 77%, 52%);
+    --clr-primary-dark-cyan: hsl(184, 100%, 22%);
+    --clr-primary-vdark-cyan: hsl(179, 100%, 13%);
+
+    --clr-neutral-white: hsla(0, 0%, 100%, .75); /* paragraphs */
+    --clr-neutral-light-gray: hsl(0, 0%, 95%); /* background, headings, buttons */
+}
+
+/* reset */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    font-size: 15px;
+    background-color: var(--clr-neutral-light-gray);
+    font-family: var(--ff-lexend-deca);
+    line-height: 1.6;
+    font-weight: var(--fw400);
+}
+
+.cards-container {
+    width: 60%;
+    height: 50%;
+    display: flex;
+    border-radius: 10px;
+    background-color: red;
+    overflow: hidden;
+}
+
+section.card {
+    padding: 2.5rem;
+    color: var(--clr-neutral-white);
+}
+
+section img {
+    width: 30%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card.sedan {
+    background-color: var(--clr-primary-orange);
+}
+
+.card.suv {
+    background-color: var(--clr-primary-dark-cyan);
+}
+
+.card.luxury {
+    background-color: var(--clr-primary-vdark-cyan);
+}
+
+.card h1 {
+    text-transform: uppercase;
+    font-family: var(--ff-big-shoulders);
+    font-size: 2.2rem;
+}
+
+.card p {
+    font-size: .9rem;
+}
+
+button {
+    width: fit-content;
+    padding: .5rem 1.5rem;
+    border: none;
+    border-radius: 100px;
+    font-size: .8rem;
+    margin-top: 3rem;
+}
+
+.card.sedan button {
+    color: var(--clr-primary-orange);
+}
+
+.card.suv button {
+    color: var(--clr-primary-dark-cyan);
+}
+
+.card.luxury button {
+    color: var(--clr-primary-vdark-cyan);
+}
+
+
+
+
+
+
+.attribution {
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    font-size: .750rem;
+    text-align: center;
+    color: var(--clr-primary-dark-cyan);
+}
+
+.attribution a {
+    color: var(--clr-primary-vdark-cyan);
+}
+
