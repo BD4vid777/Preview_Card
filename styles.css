@@ -72,6 +72,14 @@ section img {
     justify-content: space-between;
 }
 
+.card:hover img {
+    transform: scale(1.6) translateX(5px);
+}
+
+.card:hover h1{
+    transform: scale(1.4) translateX(20px);
+}
+
 .card.sedan {
     background-color: var(--clr-primary-orange);
 }
@@ -103,6 +111,7 @@ button {
     margin-top: 3rem;
 }
 
+
 .card.sedan button {
     color: var(--clr-primary-orange);
 }
@@ -115,6 +124,12 @@ button {
     color: var(--clr-primary-vdark-cyan);
 }
 
+.card button:hover, .card button:focus {
+    background-color: transparent;
+    color: var(--clr-neutral-white);
+    outline: 2px solid var(--clr-neutral-white);
+    cursor: pointer;
+}
 
 
 
